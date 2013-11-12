@@ -17,7 +17,7 @@ public class RunSpider {
 	 * @param args
 	 */
 	public static void main(String [] args) {
-		Spider spider = new Spider(10);
+		Spider spider = new Spider(20);
 		spider.crawl(BEGINNING_URL);
 		for (WordCount urlCount : spider.getUrlCounts()) {
 			println("url " + urlCount.getWord() + " is " + urlCount.getCount());
